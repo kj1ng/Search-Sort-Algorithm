@@ -8,7 +8,7 @@ for (let i = 1; i < arr.length; i++){
 
     // This is the element we are inserting to the correct location
     let key = arr[i];
-    }
+   
     
     //Start checking against all elements on the left, until the beginning of array
     //or until it finds an element that is smaller than the key
@@ -22,7 +22,8 @@ for (let i = 1; i < arr.length; i++){
     
     //insert the key into the correct location
     arr[j + 1] = key;
-
+}
+return arr;
 }
 
 insertionsort(arr);
